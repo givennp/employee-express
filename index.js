@@ -83,7 +83,7 @@ app.post("/employees", (req, res) => {
     id: uniqid.time(),
   };
 
-  employees.push(data);
+  employees.push(newEmployee);
 
   res.status(201).json({
     message: "added employee",
